@@ -1,0 +1,24 @@
+body {
+    border: 1px solid black;
+}
+
+.nama {
+    color: red;
+}
+
+.nama {
+    background-color: lightblue;
+}
+
+.content {
+    background-color: blue
+}
+
+.hebat {
+    background-color: green;
+}
+
+header {
+  display: flex;          
+  align-items: center;
+}
