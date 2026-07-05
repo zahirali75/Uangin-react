@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import AppLayout from '../components/layout/AppLayout'
 import AddTransactionPage from '../pages/AddTransactionPage'
 import DashboardPage from '../pages/DashboardPage'
+import LoginPage from '../pages/LoginPage'
 import SavingsPage from '../pages/SavingsPage'
 import StatisticsPage from '../pages/StatisticsPage'
 import { getDashboardData } from '../services/dashboardService'
@@ -43,8 +44,9 @@ export default function AppRoutes() {
 
   return (
     <Routes>
+      <Route element={<LoginPage />} path="/" />
       <Route element={<AppLayout user={user} />} path="/">
-        <Route index element={<DashboardPage transactions={transactions} />} />
+        <Route element={<DashboardPage transactions={transactions} />} path="dashboard" />
         <Route element={<AddTransactionPage onAddTransaction={addTransaction} />} path="tambah" />
         <Route element={<StatisticsPage />} path="statistik" />
         <Route

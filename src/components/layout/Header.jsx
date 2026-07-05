@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 
 const navItems = [
-  { label: 'Dashboard', path: '/', icon: 'ti-layout-dashboard' },
+  { label: 'Dashboard', path: '/dashboard', icon: 'ti-layout-dashboard' },
   { label: 'Tambah', path: '/tambah', icon: 'ti-circle-plus' },
   { label: 'Statistik', path: '/statistik', icon: 'ti-chart-bar' },
   { label: 'Tabungan', path: '/tabungan', icon: 'ti-piggy-bank' },
@@ -31,7 +31,7 @@ export default function Header({ user }) {
                     : 'text-gray-500 hover:bg-gray-100',
                 ].join(' ')
               }
-              end={item.path === '/'}
+              end={item.path === '/dashboard'}
               key={item.path}
               to={item.path}
             >
