@@ -1,0 +1,33 @@
+export const savingsGoals = [
+  {
+    id: 'laptop-baru',
+    name: 'Laptop Baru',
+    icon: 'ti-device-laptop',
+    target: 8000000,
+    collected: 2500000,
+    deadline: '',
+    gradient: 'saving-gradient-1',
+    shadow: 'shadow-blue-900/20',
+  },
+  {
+    id: 'liburan-akhir-tahun',
+    name: 'Liburan Akhir Tahun',
+    icon: 'ti-plane',
+    target: 3000000,
+    collected: 800000,
+    deadline: '',
+    gradient: 'saving-gradient-2',
+    shadow: 'shadow-orange-900/20',
+  },
+  {
+    id: 'motor-baru',
+    name: 'Motor Baru',
+    icon: 'ti-motorbike',
+    target: 2000000,
+    collected: 1700000,
+    deadline: 'Des 2026',
+    gradient: 'saving-gradient-3',
+    shadow: 'shadow-purple-900/20',
+    featured: true,
+  },
+]
