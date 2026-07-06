@@ -7,6 +7,7 @@ const navItems = [
   { label: 'Tabungan', path: '/tabungan', icon: 'ti-piggy-bank' },
 ]
 
+
 export default function BottomNav() {
   return (
     <>
